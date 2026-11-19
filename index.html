@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#082754">
+<title>کار در منزل | فرصت همکاری در بسته‌بندی</title>
+<style>
+:root{--navy:#082653;--blue:#0875dc;--cyan:#16a9ed;--pale:#edf5ff;--ink:#102b50;--muted:#50627d;--green:#08a83d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Tahoma,Arial,sans-serif;color:var(--ink);background:#f7faff;line-height:1.8}
+a{text-decoration:none;color:inherit}.wrap{width:min(1180px,94%);margin:auto}
+.top{background:linear-gradient(90deg,#061d42,#103d77);color:#fff;min-height:58px;display:flex;align-items:center}
+.topin{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13px}
+.top .center{font-family:serif;font-size:25px;white-space:nowrap}
+.navbar{background:#fff;box-shadow:0 5px 22px #102b5012;position:sticky;top:0;z-index:9}
+.navin{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:94px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--navy);font-weight:900;font-size:28px;white-space:nowrap}
+.brand small{display:block;font-size:10px;font-weight:600;color:#405574}
+.brandmark{font-size:38px;color:#0755a3}
+nav{display:flex;align-items:center;gap:19px;font-weight:700;font-size:13px}
+nav a:hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 20px;border-radius:40px;color:#fff;background:linear-gradient(110deg,#0798f0,#06449d);font-weight:800;box-shadow:0 7px 16px #0755a333;transition:.2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.btn.green{background:linear-gradient(110deg,#14c94d,#008a31)}
+.hero{min-height:440px;background:linear-gradient(90deg,#061f49 0%,#092d61 46%,#dbeaff 46%,#dbeaff 100%);overflow:hidden}
+.heroGrid{display:grid;grid-template-columns:48% 52%;min-height:440px}
+.heroText{padding:42px 25px 35px 10px;color:#fff;align-self:center}
+.heroText h1{font-size:clamp(42px,5.4vw,72px);line-height:1.25;margin:0 0 12px;font-weight:900}
+.heroText h1 span{color:#18a8ef}
+.heroText p{font-size:clamp(17px,2vw,25px);font-weight:700;line-height:1.7;margin:0 0 18px}
+.checks{display:flex;gap:25px;flex-wrap:wrap;font-weight:800;margin:15px 0 23px}
+.checks span:after{content:"✓";color:#19b6ff;font-size:23px;margin-right:8px}
+.heroPhoto{background-image:linear-gradient(90deg,#08265308,#08265300),url('assets/hero-packing.jpg');background-size:cover;background-position:center 44%;min-height:440px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-1px;padding:12px 0 20px}
+.feature{background:#fff;border:1px solid #dce8f7;border-radius:22px;box-shadow:0 8px 18px #0c3c761c;text-align:center;padding:17px 10px;min-height:132px}
+.feature .ico{font-size:37px;color:#0755a3;line-height:1.2}.feature b{display:block;font-size:17px}.feature span{font-size:14px;color:#273e60}
+.section{padding:28px 0 32px}.heading{text-align:center;font-size:29px;font-weight:900;color:var(--navy);margin:0 0 22px}
+.process{display:grid;grid-template-columns:1.1fr 2fr;gap:25px;align-items:center}
+.slogan{background:linear-gradient(135deg,#061e45,#123d78);color:white;border-radius:26px;padding:30px 22px;text-align:center;font-family:serif;font-size:27px;box-shadow:0 10px 22px #092b551f}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;text-align:center}
+.step{position:relative}.step .circle{width:105px;height:92px;border-radius:48%;margin:auto;background:#f2f7ff;border:2px solid #d9e6f8;display:grid;place-items:center;color:#07458e;font-size:43px;box-shadow:0 5px 12px #123d7814}
+.step .num{position:absolute;top:-9px;right:calc(50% - 48px);background:#092c5c;color:white;width:32px;height:32px;border-radius:50%;font-weight:900}
+.step b{display:block;margin-top:9px;line-height:1.5}
+.social{background:linear-gradient(180deg,#edf5ff,#fff);padding:18px 0 28px}
+.socialin{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.social .btn{min-width:300px;font-size:17px;padding:13px 22px}
+.rubikaIcon{width:32px;height:32px;border-radius:50%;background:#fff;color:#0875dc;display:inline-grid;place-items:center;font-size:20px}
+footer{background:linear-gradient(100deg,#061d42,#0c3268);color:#fff;padding:22px 0}
+.footin{display:flex;align-items:center;justify-content:space-between;gap:20px;text-align:center;font-size:13px}
+.footitem{display:flex;align-items:center;gap:12px}
+.footicon{font-size:30px;color:#e6f2ff}
+.note{font-size:11px;color:#b9cce6;margin-top:8px}
+@media(max-width:850px){.top .center{display:none}.navin{flex-wrap:wrap;padding:12px 0}.brand{font-size:23px}nav{order:3;width:100%;overflow:auto;justify-content:flex-start;padding:5px 0 10px}.heroGrid{grid-template-columns:1fr}.hero{background:#082653}.heroText{padding:35px 8px}.heroPhoto{min-height:300px;order:-1}.features{grid-template-columns:repeat(2,1fr)}.process{grid-template-columns:1fr}.steps{gap:8px}.slogan{font-size:23px}.footin{flex-wrap:wrap;justify-content:center}}
+@media(max-width:480px){.topin{font-size:11px}.navbar .btn{padding:9px 12px;font-size:12px}.heroText h1{font-size:43px}.heroPhoto{min-height:245px}.feature{min-height:118px}.feature b{font-size:15px}.feature span{font-size:12px}.heading{font-size:24px}.step .circle{width:82px;height:78px;font-size:34px}.step .num{right:calc(50% - 40px)}.step b{font-size:13px}.social .btn{min-width:0;width:100%;font-size:15px}.footin{font-size:11px}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap topin">
+  <span>🛡️ امنیت و اعتماد شما، اولویت ماست</span>
+  <span class="center">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>
+  <span>پشتیبانی آنلاین | ۹ صبح تا ۹ شب</span>
+</div></div>
+<header class="navbar"><div class="wrap navin">
+  <a class="brand" href="#home"><span class="brandmark">⌂</span><span>کاردرمنزل<small>فرصت همکاری در بسته‌بندی محصولات در منزل</small></span></a>
+  <nav>
+    <a href="#home">⌂ خانه</a><a href="#about">♟ درباره ما</a><a href="#benefits">★ مزایا</a><a href="#faq">؟ سوالات متداول</a><a href="#contact">☎ تماس با ما</a>
+  </nav>
+  <a class="btn" href="https://rubika.ir/kardarmanzel_98" target="_blank" rel="noopener"><span class="rubikaIcon">◈</span> عضویت در روبیکا</a>
+</div></header>
+
+<main id="home">
+<section class="hero"><div class="wrap heroGrid">
+  <div class="heroText">
+    <h1>کار <span>در منزل</span></h1>
+    <p>فرصت همکاری در بسته‌بندی محصولات<br>در منزل، با درآمد مناسب</p>
+    <div class="checks"><span>ساده</span><span>مطمئن</span><span>منعطف</span></div>
+    <a class="btn" href="https://rubika.ir/kardarmanzel_98" target="_blank" rel="noopener" style="font-size:20px;padding:14px 28px">همین حالا عضو شوید　➜</a>
+  </div>
+  <div class="heroPhoto" role="img" aria-label="بسته‌بندی محصولات در منزل"></div>
+</div></section>
+
+<div class="wrap features" id="benefits">
+  <div class="feature"><div class="ico">🎧</div><b>پشتیبانی و پاسخگویی</b><span>در تمام مراحل</span></div>
+  <div class="feature"><div class="ico">🛡️</div><b>امنیت و اعتماد</b><span>در همکاری با ما</span></div>
+  <div class="feature"><div class="ico">⌂</div><b>کار در منزل</b><span>بدون نیاز به حضور فیزیکی</span></div>
+  <div class="feature"><div class="ico">▥</div><b>درآمد مناسب</b><span>با تلاش شما</span></div>
+</div>
+
+<section class="section" id="about"><div class="wrap">
+  <h2 class="heading">مراحل همکاری</h2>
+  <div class="process">
+    <div class="slogan">آینده شغلی خود را<br>از خانه بسازید...</div>
+    <div class="steps">
+      <div class="step"><span class="num">۱</span><div class="circle">📝</div><b>ثبت‌نام<br>در سایت</b></div>
+      <div class="step"><span class="num">۲</span><div class="circle">🤝</div><b>تأیید همکاری<br>توسط مدیریت</b></div>
+      <div class="step"><span class="num">۳</span><div class="circle">📦</div><b>شروع به کار<br>و کسب درآمد</b></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="social" id="contact"><div class="wrap socialin">
+  <a class="btn" href="https://rubika.ir/kardarmanzel_98" target="_blank" rel="noopener"><span class="rubikaIcon">◈</span><span>عضویت در کانال روبیکا<br><b>@kardarmanzel_98</b></span></a>
+  <a class="btn green" href="https://rubika.ir/modir_ir98" target="_blank" rel="noopener"><span class="rubikaIcon">●</span><span>ارسال پیام به مدیریت<br><b>@modir_ir98</b></span></a>
+</div></section>
+</main>
+<footer><div class="wrap footin">
+  <div class="footitem"><span class="footicon">✧</span><span>کاردرمنزل<br>اطلاعات و راهنمای همکاری</span></div>
+  <div>کلیه حقوق مادی و معنوی این سایت محفوظ می‌باشد.</div>
+  <a class="footitem" href="https://rubika.ir/kardarmanzel_98" target="_blank" rel="noopener"><span class="footicon">◈</span><span>کانال روبیکا</span></a>
+  <a class="footitem" href="https://rubika.ir/modir_ir98" target="_blank" rel="noopener"><span class="footicon">♙</span><span>ارتباط با مدیریت</span></a>
+</div><div class="wrap note">توجه: شرایط همکاری، دستمزد و جزئیات سفارش باید پیش از شروع، شفاف و مکتوب اعلام شود. این صفحه به‌تنهایی تضمین‌کننده استخدام یا درآمد نیست.</div></footer>
+</body></html>
